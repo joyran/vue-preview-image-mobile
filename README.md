@@ -1,24 +1,30 @@
-# vue-preview-image-mobile
+<h1 align="center">vue-preview-image-mobile</h1>
 
-## Project setup
-```
-yarn install
-```
+Vue图片预览插件，只支持移动端
 
-### Compiles and hot-reloads for development
+### Install
 ```
-yarn serve
+yarn add vue-preview-image-mobile
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+### Use
+```js
+import PreviewImage from 'vue-preview-image-mobile'
+Vue.use(PreviewImage)
+
+this.$previewImage({
+  urls: [
+    'https://img.yzcdn.cn/vant/apple-1.jpg',
+    'https://img.yzcdn.cn/vant/apple-2.jpg',
+    'https://img.yzcdn.cn/vant/apple-3.jpg',
+    'https://img.yzcdn.cn/vant/apple-4.jpg'
+  ],
+  startPosition: 1,
+  onClose () {
+    console.log('关闭事件回调')
+  }
+})
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Todo
+[*] 双击放大缩小功能

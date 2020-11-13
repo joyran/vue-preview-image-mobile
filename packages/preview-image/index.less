@@ -1,0 +1,81 @@
+.image-preview__swiper-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #000;
+  z-index: 1000;
+}
+
+.image-preview__index {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  z-index: 1;
+}
+
+.image-preview__swiper-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  transform: translateZ(0);
+  transition-property: transform;
+  transition-timing-function: ease;
+}
+
+.image-preview__swiper-slider {
+  background-color: #000;
+  overflow-y: auto;
+  flex-shrink: 0;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+.image-preview__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-preview__image {
+  height: auto;
+  transition-property: width;
+  transition-timing-function: ease;
+}
+
+.image-preview__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .loading__image {
+    width: 32px;
+    height: 32px;
+    opacity: 0.6;
+    animation: loading 1.5s linear infinite;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes loading {
+  100% { transform: rotate(360deg) }
+}
