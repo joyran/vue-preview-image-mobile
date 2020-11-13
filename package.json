@@ -1,6 +1,6 @@
 {
   "name": "vue-preview-image-mobile",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/vue-preview-image-mobile.common.js",
   "description": "A vue.js image preview plugin",
   "private": false,
