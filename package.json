@@ -1,17 +1,22 @@
 {
   "name": "vue-preview-image-mobile",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/vue-preview-image-mobile.common.js",
+  "description": "A vue.js image preview plugin",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-preview-image-mobile ./packages/index.js",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:joyran/vue-preview-image-mobile.git"
   },
+  "homepage": "https://github.com/joyran/vue-preview-image-mobile#readme",
   "devDependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
